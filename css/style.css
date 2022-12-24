@@ -1,0 +1,504 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+[class*="col-"]{
+    float: left;
+    
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: 1.5s;
+}
+a:hover{
+    transform: scale(1.5);
+}
+/* global end */
+
+
+header{
+    background-color: teal;
+    padding: 5px 0;
+    text-align: center;
+    border-bottom: red solid 5px;
+
+}
+
+.logo{
+    margin: 10px 0;
+}
+
+
+
+
+.web-name{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.web-name h1 i{
+    color: red;
+    /* text-decoration: ; */
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 10px;
+    background-color: #046464;
+}
+/* nav a:hover{
+    background-color: gray;
+} */
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* header end */
+
+/* ***** hero start ******* */
+#hero{
+    margin-top: 10px;
+    padding: 110px 10px;
+    text-align: center;
+    position: relative;
+}
+#hero h1{
+    font-family: Segoe Script ;
+    padding: 10px 5px;
+    font-size: 30px;
+}
+#hero p{
+    padding: 10px 5px;
+    text-align: justify;
+    color: gray;
+    font-size: 17px;
+}
+.top-icon{
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    transition: transform 2s ;
+}
+.top-icon:hover{
+    transform: rotate(360deg);
+}
+
+.bottom-icon{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    padding: 10px 5px;
+    transition: transform 2s;
+}
+.bottom-icon:hover{
+    transform: rotate(360deg);
+}
+
+#hero{
+    content: " ";
+    display: table;
+    clear: both;
+}
+/* ********* hero end *********** */
+
+/* *** about start ** */
+.section-name{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+.co-hr{
+    border: white 5px dotted;
+    border-bottom: none;
+    margin: 10px auto;
+    width: 70px;
+}
+
+#about{
+    background-color: teal;
+    margin: 20px 0;
+    padding: 30px 0;
+}
+
+.profile{
+    text-align: center;
+    width: 100%;
+    height: min-content;
+    padding: 20px 10px;
+}
+.profile img{
+    width: 222px;
+    height: 222px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.disciption{
+    color: white;
+    padding: 20px 10px;
+}
+.dis-p{
+    font-size: 15px;
+    color: #c0bbbb;
+    text-align: justify;
+}
+.disciption p{
+    font-size: 20px;
+    padding: 10px 5px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0;
+    word-spacing: 1px;
+}
+
+
+#about::after{
+    clear: both;
+    content: " ";
+    display: table;
+}
+/* *** about end ** */
+
+/* *** skills start *** */
+.skills-card{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.skills{
+    background-color: gray;
+    padding: 20px 20px;
+    margin: 20px 10px;
+    /* text-align: center; */
+    border-radius: 10px;
+}
+
+.skills img{
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: 20px auto;
+    background-color: #c2c2c2a2;
+    border-radius: 50%;
+    padding: 15px;
+
+}
+
+.skills > ul li{
+    margin: 40px 0;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    position: relative;
+}
+
+.skills > ul li i{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    float: right;
+}
+.skills:hover{
+    box-shadow: 5px 5px 7px 5px #c0c0c0b7;
+}
+
+
+.skills > ul li::before{
+    content: " ";
+    background-color: #bdbdbdc0;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    height: 15px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* *** animation start ************* */
+
+.skills > ul li::after{
+    content: " ";
+    /* background-color: #bdbdbdc0; */
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    height: 15px;
+    width: 0;
+    border-radius: 10px;
+
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.skills > ul li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+        background-color: #046464;
+    }
+}
+
+.skills > ul li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+        background-color: #046464;
+    }
+}
+
+.skills > ul li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+    to{
+        width: 80%;
+        background-color: #046464;
+    }
+}
+
+.skills > ul li.bootstrap::after{
+    animation-name: bootstrap;
+}
+
+@keyframes bootstrap{
+    to{
+        width: 70%;
+        background-color: #046464;
+    }
+}
+
+.skills > ul li.javascript::after{
+    animation-name: javascript;
+}
+
+@keyframes javascript{
+    to{
+        width: 70%;
+        background-color: #046464;
+    }
+}
+
+.skills > ul li.react::after{
+    animation-name: react;
+}
+
+@keyframes react{
+    to{
+        width: 30%;
+        background-color: #046464;
+    }
+}
+
+/* **** animation end ************ */
+
+
+
+.edu{
+    background-color: gray;
+    padding: 20px 10px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    /* text-align: center; */
+}
+
+.edu img{
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: 20px auto;
+    background-color: #c2c2c2a2;
+    border-radius: 50%;
+    padding: 15px;
+
+}
+.edu ol{
+    margin-left: 15px;
+}
+
+.edu ol li{
+    margin-top: 20px;
+    font-weight: bolder;
+}
+.edu:hover{
+    box-shadow: 5px 5px 7px 5px #c0bebeda;
+}
+
+
+/* *** skills end *** */
+
+
+/* *** contact start *** */
+
+#contact{
+    background-color: teal;
+    padding: 25px 0;
+}
+
+.contacts{
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.contact-info input{
+    padding: 5px;
+    font-size: 15px;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.contact-info textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+button{
+    padding: 5px 10px;
+    width: 70px;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    margin: 0 10px;
+}
+button:active{
+    background-color: white;
+    color: teal;
+}
+
+.contact-icon{
+    margin: 20px 0;
+    width: 100%;
+
+}
+.contact-icon img{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px 10px;
+}
+
+.contact-icon img:hover{
+    background-color: gray;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+}
+
+/* *** contact end *** */
+
+/* ************************************************************************ */
+/*  lerg screen media start */
+
+@media screen and (min-width:800px) {
+    /* column size */
+
+    .col-1{ width: 8.33%;}
+    .col-2{ width: 16.66%;}
+    .col-3{ width: 25%;}
+    .col-4{ width: 33.33%;}
+    .col-5{ width: 41.66%;}
+    .col-6{ width: 50%;}
+    .col-7{ width: 58.33%;}
+    .col-8{ width: 66.66%;}
+    .col-9{ width: 75%;}
+    .col-10{ width: 83.33%;}
+    .col-11{ width: 91.66%;}
+    .col-12{ width: 100%;}
+
+
+
+    header{
+        height: 100px;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+    .logo{
+        height: 60px;
+        margin: 5px 0;
+    }
+    .web-name h1{
+        text-align: right;
+        margin: 28px 0;
+        font-size: 30px;
+    }
+
+    nav{
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 24px 0;
+    }
+    nav a{
+        background-color: transparent;
+        padding: 8px 12px;
+    }
+
+    .skills-card{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 8%;
+    }
+
+    .contacts{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 7%;
+    }
+    
+}
