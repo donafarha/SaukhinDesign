@@ -49,7 +49,7 @@ header{
 
 
 .web-name{
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     text-align: center;
 }
@@ -94,7 +94,7 @@ header::after{
 #hero h1{
     font-family: Segoe Script ;
     padding: 10px 5px;
-    font-size: 30px;
+    font-size: 25px;
 }
 #hero p{
     padding: 10px 5px;
@@ -175,7 +175,7 @@ header::after{
     text-align: justify;
 }
 .disciption p{
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px 5px;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 0;
