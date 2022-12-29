@@ -476,7 +476,7 @@ footer a {
     .web-name h1{
         text-align: right;
         margin: 28px 0;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     nav{
@@ -490,11 +490,11 @@ footer a {
     }
     
     #hero h1 {
-    font-size: 25px;
+    font-size: 30px;
     }
     
     .disciption p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .skills-card{
